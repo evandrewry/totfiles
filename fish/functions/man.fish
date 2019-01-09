@@ -1,0 +1,1 @@
+/Users/tyler/.config/fisherman/colored-man/functions/man.fish

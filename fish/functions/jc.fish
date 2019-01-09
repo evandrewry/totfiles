@@ -1,0 +1,1 @@
+/Users/tyler/.config/fisherman/autojump/functions/jc.fish
