@@ -1,1 +1,0 @@
-/Users/tyler/.config/fisherman/z/functions/zclean.awk
