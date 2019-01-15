@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Applications/Alacritty.app'
+let g:netrw_dirhist_2='/Applications/Alacritty.app/Contents'
+let g:netrw_dirhist_3='/Applications/Alacritty.app/Contents/MacOS'
+let g:netrw_dirhist_4='/Users/tyler/.bash_it/themes/liquidprompt/liquidprompt'
+let g:netrw_dirhist_5='/Users/tyler/avfiles/fr'
+let g:netrw_dirhist_6='/Users/tyler'
