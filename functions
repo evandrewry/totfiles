@@ -1,0 +1,15 @@
+// add note
+n () {
+  echo "${*}\n" >> ~/kk/notes.md; echo "noted"
+}
+
+// add todo
+td () {
+  echo "${*}\n" >> ~/kk/todo.md; cat ~/kk/todo.md
+}
+
+// howdoi
+hdi() {
+  howdoi $* -a -c -n 3
+}
+

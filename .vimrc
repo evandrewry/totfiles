@@ -101,8 +101,15 @@ set cursorline
 "sm:    flashes matching brackets or parentheses
 set showmatch
 
+" File tree browser
+map \           :NERDTreeToggle<CR>
+
 " Change <Leader>
 let mapleader = ","
+
+" Search
+nmap <leader>s  :%s/
+vmap <leader>s  :s/
 
 " Set temporary directory (don't litter local dir with swp/tmp files)
 set directory=/tmp/
@@ -219,6 +226,10 @@ vmap <leader>t<C-l> :Align =><CR>
 
 " Toggle NERDTree with <leader>d
 map <silent> <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+
+" Copy current file path to system pasteboard
+map <silent> <D-C> :let @* = expand("%")<CR>:echo "Copied: ".expand("%")<CR>
+map <leader>C :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
 
 " TextMate fuzzy finder with <leader>t
 map <silent> <leader>t :CtrlP<CR>

@@ -1,1 +1,66 @@
-/Users/tyler/workspaces/dropbox/aliases
+alias cpdotFROMrepo='cp dot-files/zshrc ~/.zshrc && cp dot-files/vimrc ~/.vimrc && cp dot-files/rc.conf ~/.rc.conf'
+alias sodb="source ~/.db.sh"
+alias purity="purifycss ./**/*.css ./**/*.html --rejected --info --min >> lol.css"
+alias hs='http-server'
+alias phelp='http-server /usr/local/Cellar/python@2/2.7.15_1/share/doc/python@2/library/'
+alias ter="open -a iTerm.app"
+alias trash="rmtrash" #https://apple.stackexchange.com/a/17637
+alias del="rmtrash"
+alias css="stylelint \"src/layouts/*.css\" --config /usr/local/lib/node_modules/stylelint-config-standard/ --fix"
+alias tags="ctags -R --exclude=node_modules --exclude=bower_components --exclude=public --exclude=.git --exclude=dist --exclude=.tmp ."
+alias again="fc -e : -1"
+alias ccc="pbcopy <"
+alias ppp="pbpaste"
+alias h='function hdi(){ howdoi $* -a -c; }; hdi'
+alias gd="git diff"
+alias gco="git checkout"
+alias glp="git log --pretty=oneline"
+alias ggg="git add . && git commit -m 'standard' && git push"
+alias kewl="ps -e -orss=,args= | sort -b -k1,1n| head -10"
+alias gcall="git checkout -- . "
+alias gpll="git pull"
+alias gcm="git commit -m"
+alias gs="git status"
+alias co="git checkout"
+alias gpsh="git push"
+alias df="git diff"
+alias dev="git checkout dev"
+alias master="git checkout master"
+alias twmail="mail -s '$' e07c124d-9982-4921-b7b9-7a640e3c14bb@inthe.am"
+alias zrc="vim ~/.zshrc"
+alias vrc="vim ~/.vimrc"
+alias ssr="source ~/.zshrc"
+alias brc="vim ~/.bashrc"
+alias ssb="vim ~/.bash_profile"
+alias kewl="ps -e -orss=,args= | sort -b -k1,1n| head -10"
+alias transf="trans -shell fr:fr+en"
+alias transes="trans -shell es:es+en"
+alias gl="googler"
+alias v="cd ~/avfiles/fr && open . -a MacVim"
+alias tl="task all"
+alias ta="task add"
+alias ..='cd ..'
+alias ld='ls -ld'          # Show info about the directory
+alias lla='ls -lAF'        # Show hidden all files
+alias ll='ls -lF'          # Show long file information
+alias la='ls -AF'          # Show hidden files
+alias lx='ls -lXB'         # Sort by extension
+alias lk='ls -lSr'         # Sort by size, biggest last
+alias lc='ls -ltcr'        # Sort by and show change time, most recent last
+alias lu='ls -ltur'        # Sort by and show access time, most recent last
+alias lt='ls -ltr'         # Sort by date, most recent last
+alias lr='ls -lR'          # Recursive ls
+alias c="clear"
+alias front="cd ~/avfiles/fr/app/scripts/app"
+alias back="cd ~/avfiles/back"
+alias tree="tree -C"
+alias rf="rm -rf"
+alias hqq="youtube-dl -x --audio-format m4a --audio-quality 0"
+alias music="open 'https://www.youtube.com/watch?v=faHomJimjLc' -a Safari"
+alias grs="grunt serve"
+alias live="live-server"
+alias bubo='brew update && brew outdated'
+alias bubc='brew upgrade && brew cleanup'
+alias bubu='bubo && bubc'
+alias grr="cd ~/avfiles/fr && grunt serve"
+alias jj="gatsby develop --verbose --open"
