@@ -24,3 +24,10 @@ if ls --color -d . >/dev/null 2>&1; then  # GNU ls
   alias ll='ls -l'
   alias l='ls -l -a'
 fi
+
+ . /usr/local/etc/profile.d/z.sh
+
+
+ rmd() {
+  pandoc $1 | lynx -stdin
+ }

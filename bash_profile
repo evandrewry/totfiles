@@ -7,6 +7,10 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
+rmd() {
+  pandoc $1 | lynx -stdin
+}
+
 # Lock and Load a custom theme file.
 # Leave empty to disable theming.
 # location /.bash_it/themes/
