@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 
 # Path to the bash it configuration
-export BASH_IT="/Users/tyler/.bash_it"
-
-if [ -f ~/.bashrc ]; then
-  . ~/.bashrc
-fi
+export BASH_IT="/Users/tyler/.bash-it"
 
 # Lock and Load a custom theme file.
 # Leave empty to disable theming.
@@ -17,7 +13,7 @@ export BASH_IT_THEME='simple'
 # export BASH_IT_REMOTE='bash-it'
 
 # Your place for hosting Git repos. I use this for private repos.
-export GIT_HOSTING='git@git.domain.com'
+# export GIT_HOSTING='git@git.domain.com'
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
@@ -29,7 +25,7 @@ export IRC_CLIENT='irssi'
 export TODO="t"
 
 # Set this to false to turn off version control status checking within the prompt for all themes
-export SCM_CHECK=true
+# export SCM_CHECK=true
 
 # Set Xterm/screen/Tmux title with only a short hostname.
 # Uncomment this (or set SHORT_HOSTNAME to something else),
@@ -45,10 +41,6 @@ export SCM_CHECK=true
 # Uncomment this to set.
 #export SHORT_TERM_LINE=true
 
-# Set vcprompt executable path for scm advance info in prompt (demula theme)
-# https://github.com/djl/vcprompt
-#export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
-
 # (Advanced): Uncomment this to make Bash-it reload itself automatically
 # after enabling or disabling aliases, plugins, and completions.
 # export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
@@ -56,10 +48,14 @@ export SCM_CHECK=true
 # Uncomment this to make Bash-it create alias reload.
 # export BASH_IT_RELOAD_LEGACY=1
 
-# to use swift repl
-export TOOLCHAINS=swift
-
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
 
-source /Users/tyler/.aliases
+# aliases
+source ~/.aliases
+
+# functions
+source ~/.functions
+
+# z 
+. /usr/local/etc/profile.d/z.sh
